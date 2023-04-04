@@ -7,6 +7,11 @@ public class Livro {
     String autor;
     Editora editora;
 
+    public Livro(String nome, double preco) {
+        this.nome = nome; // this é referencia aos atributos
+        this.preco = preco;
+    }
+
     void exibirDados() {
         System.out.println("Nome: " + nome);
         System.out.println("Resumo: " + resumo);
