@@ -20,7 +20,7 @@ public class Livro {
         System.out.println("Preço: " + preco);
         System.out.println("Páginas: " + paginas);
         System.out.println("Autor: " + autor);
-        System.out.println("Tipo de capa: " + tipoCapa);
+        System.out.printf("Tipo de capa: " + tipoCapa);
         if (temEditora())
             System.out.println("Editora: " + editora.nome);
         System.out.println("-------");
