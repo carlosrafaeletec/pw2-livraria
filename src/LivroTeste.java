@@ -22,6 +22,7 @@ public class LivroTeste {
         livroFavorito.resumo = "bla bla bla bla bla";
         livroFavorito.paginas = 500;
         livroFavorito.autor = "Dan Brown";
+        livroFavorito.tipoCapa = TipoCapaEnum.PERSONALIZADA;
 
         Editora editora2 = new Editora();
         //editora1.nome = "Editora Erica";

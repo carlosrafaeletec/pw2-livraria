@@ -6,10 +6,12 @@ public class Livro {
     int paginas;
     String autor;
     Editora editora;
+    TipoCapaEnum tipoCapa;
 
     public Livro(String nome, double preco) {
         this.nome = nome; // this é referencia aos atributos
         this.preco = preco;
+        tipoCapa = TipoCapaEnum.COMUM;
     }
 
     void exibirDados() {
@@ -18,9 +20,9 @@ public class Livro {
         System.out.println("Preço: " + preco);
         System.out.println("Páginas: " + paginas);
         System.out.println("Autor: " + autor);
+        System.out.println("Tipo de capa: " + tipoCapa);
         if (temEditora())
             System.out.println("Editora: " + editora.nome);
-
         System.out.println("-------");
     }
 
