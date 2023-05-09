@@ -10,6 +10,10 @@ public class LivroTeste {
 
         Editora editora1 = new Editora();
         //editora1.nome = "Editora Erica";
+        editora1.nome = "E";
+        if (editora1.nome.length() <= 4)
+            System.out.println("Editora invalida");
+
         editora1.email = "edErica@gmai.com.br";
         meuLivro.setEditora(editora1);
 
@@ -17,12 +21,13 @@ public class LivroTeste {
 
         meuLivro.exibirDados();
 
-        Livro livroFavorito = new Livro("O Código Da Vinci",27.90);
+        LivroDigital livroFavorito = new LivroDigital("O Código Da Vinci",27.90);
         // livroFavorito.nome = "O Código Da Vinci";
         livroFavorito.setResumo("bla bla bla bla bla");
         livroFavorito.setPaginas(500);
         livroFavorito.setAutor("Dan Brown");
         livroFavorito.setTipoCapa(TipoCapaEnum.PERSONALIZADA);
+        livroFavorito.setMarcaDAgua("email@teste.com");
 
         Editora editora2 = new Editora();
         //editora1.nome = "Editora Erica";
